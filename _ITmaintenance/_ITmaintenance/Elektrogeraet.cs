@@ -7,12 +7,20 @@ namespace _ITmaintenance
 {
     class Elektrogeraet
     {
-        //Unterstützungsfelder
+        /// <summary>
+        /// Unterstützungsfelder
+        /// </summary>
         private Besitzer besitzer;
         private string geraetName, productID;
         private Enum Status;
 
-        //Konstruktor
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="besitzer"></param>
+        /// <param name="geraetName"></param>
+        /// <param name="productID"></param>
+        /// <param name="Status"></param>
         public Elektrogeraet(Besitzer besitzer, string geraetName, string productID, Enum Status)
         {
             this.besitzer = besitzer;
@@ -21,7 +29,9 @@ namespace _ITmaintenance
             this.Status = Status;
         }
 
-        //Eingenschaften
+        /// <summary>
+        /// Eingenschaften
+        /// </summary>
         public Besitzer Besitzer
         {
             get { return this.besitzer; }

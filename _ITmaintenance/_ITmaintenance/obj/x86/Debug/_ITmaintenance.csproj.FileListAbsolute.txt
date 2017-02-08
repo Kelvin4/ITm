@@ -9,6 +9,7 @@ C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITm
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.pdb
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.exe
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.pdb
+<<<<<<< HEAD
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintenance.exe
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintenance.pdb
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.csprojResolveAssemblyReference.cache
@@ -16,3 +17,6 @@ E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.Hauptmenu.
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.Login.resources
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.Properties.Resources.resources
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.csproj.GenerateResource.Cache
+=======
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.LoginDatenAendern.resources
+>>>>>>> master

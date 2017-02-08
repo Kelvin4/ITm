@@ -103,6 +103,7 @@
             this.Controls.Add(this.bNeuesGeraet);
             this.Name = "Hauptmenu";
             this.Text = "Hauptmenu";
+            this.Load += new System.EventHandler(this.Hauptmenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

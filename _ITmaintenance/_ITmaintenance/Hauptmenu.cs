@@ -21,5 +21,10 @@ namespace _ITmaintenance
             passwort = "Kelvin".ToCharArray();
             this.adapter = new Login_SQL_Adapter("Kelvin Sopnan", this.passwort);
         }
+
+        private void Hauptmenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
