@@ -15,5 +15,10 @@ namespace _ITmaintenance
         {
             InitializeComponent();
         }
+
+        private void Hauptmenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

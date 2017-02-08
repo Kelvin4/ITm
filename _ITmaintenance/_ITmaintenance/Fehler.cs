@@ -7,12 +7,19 @@ namespace _ITmaintenance
 {
     class Fehler
     {
-        //Unterstützungsfeld
+        /// <summary>
+        /// Unterstützungsfeld
+        /// </summary>
         private string fehlertyp;
         private double fehlerpreis;
         private long fehlercode;
 
-        //Konstruktor
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="fehlertyp"></param>
+        /// <param name="fehlerpreis"></param>
+        /// <param name="fehlercode"></param>
         public Fehler(string fehlertyp, double fehlerpreis, long fehlercode)
         {
             this.fehlertyp = fehlertyp;
@@ -20,7 +27,9 @@ namespace _ITmaintenance
             this.fehlercode = fehlercode;
         }
 
-        //Eingenschaften
+        /// <summary>
+        /// Eingenschaften
+        /// </summary>
         public string Fehlertyp
         {
             get { return this.fehlertyp; }

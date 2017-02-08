@@ -16,7 +16,32 @@ namespace _ITmaintenance
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBPasswort_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Login Fenster schließen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bLoginAbbrechen_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void tBMitarbeiterName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load_1(object sender, EventArgs e)
         {
 
         }

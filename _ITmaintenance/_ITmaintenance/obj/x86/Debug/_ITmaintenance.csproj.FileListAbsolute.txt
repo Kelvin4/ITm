@@ -9,3 +9,4 @@ C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITm
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.pdb
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.exe
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.pdb
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.LoginDatenAendern.resources

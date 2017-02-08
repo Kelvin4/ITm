@@ -15,5 +15,29 @@ namespace _ITmaintenance
         {
             InitializeComponent();
         }
+
+        private void lAktuellerBenutzernameAendern_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bAenderungenAusführen_Click(object sender, EventArgs e)
+        {
+            if(tBNeuesPasswort.Text != tBPasswortBestaetigen.Text)
+            {
+                MessageBox.Show("Die Passwörter stimmen nicht überein", "Warnung");
+            }
+            
+        }
+
+        /// <summary>
+        /// Login Daten ändern" schließen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bAenderungenAbbrechen_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
