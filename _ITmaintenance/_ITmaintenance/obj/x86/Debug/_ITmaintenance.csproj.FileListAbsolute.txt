@@ -1,9 +1,9 @@
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintenance.exe
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintenance.pdb
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.csprojResolveAssemblyReference.cache
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.Hauptmenu.resources
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.Login.resources
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.Properties.Resources.resources
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.csproj.GenerateResource.Cache
-C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintenance.exe
-C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintenance.pdb
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.exe
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\x86\Debug\_ITmaintenance.pdb
