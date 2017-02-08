@@ -11,9 +11,15 @@ namespace _ITmaintenance
 {
     public partial class Hauptmenu : Form
     {
+
+        private Login_SQL_Adapter adapter;
+        private char[] passwort = new char[15];
+
         public Hauptmenu()
         {
             InitializeComponent();
+            passwort = "Kelvin".ToCharArray();
+            this.adapter = new Login_SQL_Adapter("Kelvin Sopnan", this.passwort);
         }
     }
 }

@@ -5,7 +5,8 @@ using System.Text;
 
 namespace _ITmaintenance
 {
-    class Status
+    enum Status
     {
+        InUntersuchung, SchonUntersucht, InReperatur, Repariert, NichtRepariert, Geliefert
     }
 }
