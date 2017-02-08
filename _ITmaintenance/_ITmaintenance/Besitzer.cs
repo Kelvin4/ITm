@@ -7,10 +7,12 @@ namespace _ITmaintenance
 {
     class Besitzer
     {
+        //Unterstützungsfelder
         private string name, vorname, postleitzahl, ort, handynummer;
         private char strasse, email;
         private int hausnummer;
 
+        //Konstruktor
         public Besitzer(string name, string vorname, string postleitzahl, string ort, string handynummer, char strasse, char email, int hausnummer)
         {
             this.name = name;
@@ -23,6 +25,8 @@ namespace _ITmaintenance
             this.hausnummer = hausnummer;
         }
 
+
+        //Eingenschaften
         public string Name
         {
             get{return this.name;}
@@ -61,7 +65,5 @@ namespace _ITmaintenance
         {
             get { return this.hausnummer; }
         }
-
-
     }
 }
