@@ -4,3 +4,6 @@ E:\Git\ITm\_ITmaintenance\_ITmaintance\obj\Debug\_ITmaintance.pdb
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintance.exe.config
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.exe
 E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.pdb
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintance.exe.config
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.exe
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.pdb
