@@ -1,0 +1,6 @@
+E:\Git\ITm\_ITmaintenance\_ITmaintance\bin\Debug\_ITmaintance.exe.config
+E:\Git\ITm\_ITmaintenance\_ITmaintance\obj\Debug\_ITmaintance.exe
+E:\Git\ITm\_ITmaintenance\_ITmaintance\obj\Debug\_ITmaintance.pdb
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintance.exe.config
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.exe
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.pdb
