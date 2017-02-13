@@ -1,18 +1,20 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_ITmaintenance", "_ITmaintenance\_ITmaintenance.csproj", "{5045EAC0-DF68-49D8-BF71-E6F6F511B205}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_ITmaintenance", "_ITmaintance\_ITmaintenance.csproj", "{27051CBC-BC73-49D5-BBFF-C0E5D8D0DEFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5045EAC0-DF68-49D8-BF71-E6F6F511B205}.Debug|x86.ActiveCfg = Debug|x86
-		{5045EAC0-DF68-49D8-BF71-E6F6F511B205}.Debug|x86.Build.0 = Debug|x86
-		{5045EAC0-DF68-49D8-BF71-E6F6F511B205}.Release|x86.ActiveCfg = Release|x86
-		{5045EAC0-DF68-49D8-BF71-E6F6F511B205}.Release|x86.Build.0 = Release|x86
+		{27051CBC-BC73-49D5-BBFF-C0E5D8D0DEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27051CBC-BC73-49D5-BBFF-C0E5D8D0DEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27051CBC-BC73-49D5-BBFF-C0E5D8D0DEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27051CBC-BC73-49D5-BBFF-C0E5D8D0DEFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

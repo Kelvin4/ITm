@@ -1,0 +1,15 @@
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\bin\Debug\_ITmaintance.exe.config
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\obj\Debug\_ITmaintance.csprojResolveAssemblyReference.cache
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\obj\Debug\_ITmaintenance.Hauptmenu.resources
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\obj\Debug\_ITmaintenance.Login.resources
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\obj\Debug\_ITmaintenance.LoginDatenAendern.resources
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\obj\Debug\_ITmaintance.Properties.Resources.resources
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\obj\Debug\_ITmaintance.csproj.GenerateResource.Cache
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\bin\Debug\_ITmaintance.exe
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\bin\Debug\_ITmaintance.pdb
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\bin\Debug\System.Data.SQLite.dll
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\obj\Debug\_ITmaintance.exe
+e:\benutzer\paul\dokumente\visual studio 2015\Projects\_ITmaintance\_ITmaintance\obj\Debug\_ITmaintance.pdb
+E:\Git\ITm\_ITmaintenance\_ITmaintance\bin\Debug\_ITmaintance.exe.config
+E:\Git\ITm\_ITmaintenance\_ITmaintance\obj\Debug\_ITmaintance.exe
+E:\Git\ITm\_ITmaintenance\_ITmaintance\obj\Debug\_ITmaintance.pdb
