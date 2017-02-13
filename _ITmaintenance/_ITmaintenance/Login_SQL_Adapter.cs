@@ -6,38 +6,44 @@ using System.Data.SQLite;
 
 namespace _ITmaintenance
 {
+    /// <summary>
+    /// Diese Klasse erstellt die Verbindung zur Datenbank
+    /// </summary>
     class Login_SQL_Adapter
     {
 
         /// <summary>
-        /// 
-        /// 
+        /// Name der Datenbank
         /// </summary>
         private string dataSource;
 
         /// <summary>
-        /// 
-        /// 
+        /// Name aus der Textbox
         /// </summary>
         private string name;
 
         /// <summary>
-        /// 
+        /// eingegebenes Passwort
         /// </summary>
         private char[] password;
 
         /// <summary>
-        /// 
+        /// Passwort aus der Datenbank
         /// </summary>
-        private SQLiteConnection verbindung = new SQLiteConnection();
+        private char[] passwordDatabase;
 
         /// <summary>
-        /// 
+        /// Personalnummer des Mitarbeiters
+        /// </summary>
+        private int personalnummer;
+
+        /// <summary>
+        /// SQL - Verbindung
         /// </summary>
         private SQLiteConnection connection;
 
         /// <summary>
-        /// 
+        /// SQL - Commando
         /// </summary>
         private SQLiteCommand command;
 
@@ -46,37 +52,88 @@ namespace _ITmaintenance
         /// </summary>
         private SQLiteDataReader reader;
 
+        private Coder coder;
+
         /// <summary>
-        /// 
+        /// Konstruktor des Adapters
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="password"></param>
+        /// <param name="name">Eingabe des zu überprüfendes Namens</param>
+        /// <param name="password">Eingabe des zu überprüfendes Passworts</param>
         public Login_SQL_Adapter(string name, char[] password)
         {
-            this.name       = name;
-            this.password   = password;
-            this.dataSource = "Mitarbeiter.sqlite";
-            this.connection = new SQLiteConnection();
-            this.CheckDatabase();
+            //dynamische und statische Zuweisung
+            this.name               = name;
+            this.password           = password;
+            this.passwordDatabase   = "".ToCharArray();
+            this.personalnummer     = 0;
+            this.dataSource         = "Mitarbeiter.sqlite";
+            this.connection         = new SQLiteConnection();
+            this.coder              = new Coder();
+            //Initialisierung des Adapters
+            this.initSQLAdapter();
         }
 
         /// <summary>
-        /// 
+        /// Initialisiert die Verbindung und führt das Querie aus
         /// </summary>
-        /// <returns></returns>
-        public void CheckDatabase()
+        /// <returns>kein Rückgabewert</returns>
+        public void initSQLAdapter()
         {
+            //Zuweisung der Datenbank
             this.connection.ConnectionString = "Data Source=" + this.dataSource;
+            //Öffnen der Verbindung
             connection.Open();
+            //Zuweisung der Datenbank an das Command
             this.command = new SQLiteCommand(this.connection);
-            this.command.CommandText = "SELECT Personalnummer FROM Mitarbeiter WHERE Name = '" + this.name + "' AND Passwort = '" + new string(password) + "'";
+            //Querie - Text
+            this.command.CommandText = "SELECT Personalnummer,Passwort FROM Mitarbeiter WHERE Name = '" + this.name + "'";
+            // Ausführung des Queries
             this.command.ExecuteNonQuery();
             this.reader = this.command.ExecuteReader();
+            //Abfragen des Readers
             while (reader.Read())
             {
-                Console.WriteLine(reader.GetInt16(reader.GetOrdinal("Personalnummer")));
-
+                //Abfrage der Personalnummer
+                this.personalnummer     = reader.GetInt32(reader.GetOrdinal("Personalnummer"));
+                //Abfrage des Passworts
+                this.passwordDatabase   = reader.GetString(reader.GetOrdinal("Passwort")).ToCharArray();
             }
+        }
+
+        /// <summary>
+        /// Diese Methode überprüft die Daten
+        /// </summary>
+        /// <returns></returns>
+        public bool CheckUser()
+        {
+            //Speichervariable
+            bool validUser = false;
+
+            //Entschlüsseltes Passwort
+            char[] encryptPassword = coder.Decrypt(this.passwordDatabase);
+
+            //Überprüfung der Werte
+            if( encryptPassword.Equals(this.password))
+            {
+                //True
+                validUser = true;
+            }
+            else
+            {
+                //False
+                validUser = false;
+            }
+
+            return validUser;
+        }
+
+        /// <summary>
+        /// Getter für die Personalnummer
+        /// </summary>
+        /// <returns>gibt Personalnummer zurück</returns>
+        public int getPersNr()
+        {
+            return this.personalnummer;
         }
     }
 }
