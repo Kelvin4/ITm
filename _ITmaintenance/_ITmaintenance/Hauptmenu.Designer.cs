@@ -33,7 +33,7 @@
             this.bNeuerMitarbeiter = new System.Windows.Forms.Button();
             this.bMitarbeiterDatenAender = new System.Windows.Forms.Button();
             this.lMenu = new System.Windows.Forms.Label();
-            this.bSchliessen = new System.Windows.Forms.Button();
+            this.bHauptmenuSchliessen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bNeuesGeraet
@@ -81,21 +81,22 @@
             this.lMenu.TabIndex = 5;
             this.lMenu.Text = "Menu";
             // 
-            // bSchliessen
+            // bHauptmenuSchliessen
             // 
-            this.bSchliessen.Location = new System.Drawing.Point(73, 167);
-            this.bSchliessen.Name = "bSchliessen";
-            this.bSchliessen.Size = new System.Drawing.Size(164, 23);
-            this.bSchliessen.TabIndex = 6;
-            this.bSchliessen.Text = "Schliessen";
-            this.bSchliessen.UseVisualStyleBackColor = true;
+            this.bHauptmenuSchliessen.Location = new System.Drawing.Point(73, 167);
+            this.bHauptmenuSchliessen.Name = "bHauptmenuSchliessen";
+            this.bHauptmenuSchliessen.Size = new System.Drawing.Size(164, 23);
+            this.bHauptmenuSchliessen.TabIndex = 6;
+            this.bHauptmenuSchliessen.Text = "Schliessen";
+            this.bHauptmenuSchliessen.UseVisualStyleBackColor = true;
+            this.bHauptmenuSchliessen.Click += new System.EventHandler(this.bHauptmenuSchliessen_Click);
             // 
             // Hauptmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 265);
-            this.Controls.Add(this.bSchliessen);
+            this.Controls.Add(this.bHauptmenuSchliessen);
             this.Controls.Add(this.lMenu);
             this.Controls.Add(this.bMitarbeiterDatenAender);
             this.Controls.Add(this.bNeuerMitarbeiter);
@@ -116,6 +117,6 @@
         private System.Windows.Forms.Button bNeuerMitarbeiter;
         private System.Windows.Forms.Button bMitarbeiterDatenAender;
         private System.Windows.Forms.Label lMenu;
-        private System.Windows.Forms.Button bSchliessen;
+        private System.Windows.Forms.Button bHauptmenuSchliessen;
     }
 }

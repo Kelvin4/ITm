@@ -28,75 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.bAnmelden = new System.Windows.Forms.Button();
+            this.bAbbrechenLogin = new System.Windows.Forms.Button();
+            this.lBenutzernameLogin = new System.Windows.Forms.Label();
+            this.lPasswortLogin = new System.Windows.Forms.Label();
+            this.tBBenutzernameLogin = new System.Windows.Forms.TextBox();
+            this.tBPasswortLogin = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // bAnmelden
             // 
-            this.button1.Location = new System.Drawing.Point(120, 177);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bAnmelden.Location = new System.Drawing.Point(117, 174);
+            this.bAnmelden.Name = "bAnmelden";
+            this.bAnmelden.Size = new System.Drawing.Size(75, 23);
+            this.bAnmelden.TabIndex = 0;
+            this.bAnmelden.Text = "Login";
+            this.bAnmelden.UseVisualStyleBackColor = true;
+            this.bAnmelden.Click += new System.EventHandler(this.bAnmelden_Click);
             // 
-            // button2
+            // bAbbrechenLogin
             // 
-            this.button2.Location = new System.Drawing.Point(197, 230);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bAbbrechenLogin.Location = new System.Drawing.Point(197, 230);
+            this.bAbbrechenLogin.Name = "bAbbrechenLogin";
+            this.bAbbrechenLogin.Size = new System.Drawing.Size(75, 23);
+            this.bAbbrechenLogin.TabIndex = 1;
+            this.bAbbrechenLogin.Text = "Abbrechen";
+            this.bAbbrechenLogin.UseVisualStyleBackColor = true;
+            this.bAbbrechenLogin.Click += new System.EventHandler(this.bAbbrechenLogin_Click);
             // 
-            // label1
+            // lBenutzernameLogin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.lBenutzernameLogin.AutoSize = true;
+            this.lBenutzernameLogin.Location = new System.Drawing.Point(45, 41);
+            this.lBenutzernameLogin.Name = "lBenutzernameLogin";
+            this.lBenutzernameLogin.Size = new System.Drawing.Size(75, 13);
+            this.lBenutzernameLogin.TabIndex = 2;
+            this.lBenutzernameLogin.Text = "Benutzername";
             // 
-            // label2
+            // lPasswortLogin
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 115);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.lPasswortLogin.AutoSize = true;
+            this.lPasswortLogin.Location = new System.Drawing.Point(48, 103);
+            this.lPasswortLogin.Name = "lPasswortLogin";
+            this.lPasswortLogin.Size = new System.Drawing.Size(50, 13);
+            this.lPasswortLogin.TabIndex = 3;
+            this.lPasswortLogin.Text = "Passwort";
             // 
-            // textBox1
+            // tBBenutzernameLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.tBBenutzernameLogin.Location = new System.Drawing.Point(161, 41);
+            this.tBBenutzernameLogin.Name = "tBBenutzernameLogin";
+            this.tBBenutzernameLogin.Size = new System.Drawing.Size(100, 20);
+            this.tBBenutzernameLogin.TabIndex = 4;
             // 
-            // textBox2
+            // tBPasswortLogin
             // 
-            this.textBox2.Location = new System.Drawing.Point(153, 108);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.tBPasswortLogin.Location = new System.Drawing.Point(161, 100);
+            this.tBPasswortLogin.Name = "tBPasswortLogin";
+            this.tBPasswortLogin.Size = new System.Drawing.Size(100, 20);
+            this.tBPasswortLogin.TabIndex = 5;
             // 
             // Login
             // 
             this.ClientSize = new System.Drawing.Size(284, 265);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tBPasswortLogin);
+            this.Controls.Add(this.tBBenutzernameLogin);
+            this.Controls.Add(this.lPasswortLogin);
+            this.Controls.Add(this.lBenutzernameLogin);
+            this.Controls.Add(this.bAbbrechenLogin);
+            this.Controls.Add(this.bAnmelden);
             this.Name = "Login";
-            this.Load += new System.EventHandler(this.Login_Load_1);
+            this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,11 +113,17 @@
         private System.Windows.Forms.Label lMitarbeiterPasswort;
         private System.Windows.Forms.Button bLogin;
         private System.Windows.Forms.Button bLoginAbbrechen;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button b;
+        private System.Windows.Forms.Button bSchließen;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tBBenutzername;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button bAnmelden;
+        private System.Windows.Forms.Button bAbbrechenLogin;
+        private System.Windows.Forms.Label lBenutzernameLogin;
+        private System.Windows.Forms.Label lPasswortLogin;
+        private System.Windows.Forms.TextBox tBBenutzernameLogin;
+        private System.Windows.Forms.TextBox tBPasswortLogin;
     }
 }

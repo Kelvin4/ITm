@@ -11,37 +11,29 @@ namespace _ITmaintenance
 {
     public partial class Login : Form
     {
+        private Login_SQL_Adapter adapter;
+        private string name;
+        private char[] password;
+
         public Login()
         {
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void bAnmelden_Click(object sender, EventArgs e)
         {
 
+            this.name = this.tBBenutzernameLogin.Text;
+            this.password = this.tBPasswortLogin.Text.ToCharArray();
+            this.adapter = new Login_SQL_Adapter(name, password);
         }
 
-        private void tBPasswort_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        /// <summary>
-        /// Login Fenster schließen
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void bLoginAbbrechen_Click(object sender, EventArgs e)
+        private void bAbbrechenLogin_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
-        private void tBMitarbeiterName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Login_Load_1(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }

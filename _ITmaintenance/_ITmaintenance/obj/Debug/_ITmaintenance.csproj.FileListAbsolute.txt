@@ -7,3 +7,12 @@ E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.pdb
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintance.exe.config
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.exe
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.pdb
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintance.exe
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintance.pdb
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\System.Data.SQLite.dll
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.csprojResolveAssemblyReference.cache
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.Hauptmenu.resources
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.Login.resources
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.LoginDatenAendern.resources
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.Properties.Resources.resources
+C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.csproj.GenerateResource.Cache

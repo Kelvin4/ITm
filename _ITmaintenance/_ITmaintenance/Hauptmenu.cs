@@ -26,5 +26,10 @@ namespace _ITmaintenance
         {
 
         }
+
+        private void bHauptmenuSchliessen_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

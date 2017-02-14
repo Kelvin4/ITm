@@ -36,7 +36,7 @@
             this.tBNeuesPasswort = new System.Windows.Forms.TextBox();
             this.tBPasswortBestaetigen = new System.Windows.Forms.TextBox();
             this.bAenderungenAusführen = new System.Windows.Forms.Button();
-            this.bAenderungenAbbrechen = new System.Windows.Forms.Button();
+            this.bLoginDatenAenderungenAbbrechen = new System.Windows.Forms.Button();
             this.tBBenutzernameBeiPasswortAendern = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -108,15 +108,15 @@
             this.bAenderungenAusführen.UseVisualStyleBackColor = true;
             this.bAenderungenAusführen.Click += new System.EventHandler(this.bAenderungenAusführen_Click);
             // 
-            // bAenderungenAbbrechen
+            // bLoginDatenAenderungenAbbrechen
             // 
-            this.bAenderungenAbbrechen.Location = new System.Drawing.Point(120, 240);
-            this.bAenderungenAbbrechen.Name = "bAenderungenAbbrechen";
-            this.bAenderungenAbbrechen.Size = new System.Drawing.Size(75, 23);
-            this.bAenderungenAbbrechen.TabIndex = 11;
-            this.bAenderungenAbbrechen.Text = "Abbrechen";
-            this.bAenderungenAbbrechen.UseVisualStyleBackColor = true;
-            this.bAenderungenAbbrechen.Click += new System.EventHandler(this.bAenderungenAbbrechen_Click);
+            this.bLoginDatenAenderungenAbbrechen.Location = new System.Drawing.Point(120, 240);
+            this.bLoginDatenAenderungenAbbrechen.Name = "bLoginDatenAenderungenAbbrechen";
+            this.bLoginDatenAenderungenAbbrechen.Size = new System.Drawing.Size(75, 23);
+            this.bLoginDatenAenderungenAbbrechen.TabIndex = 11;
+            this.bLoginDatenAenderungenAbbrechen.Text = "Abbrechen";
+            this.bLoginDatenAenderungenAbbrechen.UseVisualStyleBackColor = true;
+            this.bLoginDatenAenderungenAbbrechen.Click += new System.EventHandler(this.bAenderungenAbbrechen_Click);
             // 
             // tBBenutzernameBeiPasswortAendern
             // 
@@ -130,7 +130,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 265);
-            this.Controls.Add(this.bAenderungenAbbrechen);
+            this.Controls.Add(this.bLoginDatenAenderungenAbbrechen);
             this.Controls.Add(this.bAenderungenAusführen);
             this.Controls.Add(this.tBPasswortBestaetigen);
             this.Controls.Add(this.tBNeuesPasswort);
@@ -157,7 +157,7 @@
         private System.Windows.Forms.TextBox tBNeuesPasswort;
         private System.Windows.Forms.TextBox tBPasswortBestaetigen;
         private System.Windows.Forms.Button bAenderungenAusführen;
-        private System.Windows.Forms.Button bAenderungenAbbrechen;
+        private System.Windows.Forms.Button bLoginDatenAenderungenAbbrechen;
         private System.Windows.Forms.TextBox tBBenutzernameBeiPasswortAendern;
     }
 }

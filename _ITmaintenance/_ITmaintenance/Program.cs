@@ -15,7 +15,7 @@ namespace _ITmaintenance
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Hauptmenu());
+            Application.Run(new Login());
         }
     }
 }
