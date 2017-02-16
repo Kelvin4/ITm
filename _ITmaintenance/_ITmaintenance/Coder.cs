@@ -24,13 +24,14 @@ namespace _ITmaintenance
         /// </summary>
         /// <param name="input">verschlüsseltes Passwort</param>
         /// <returns>entschlüsseltes Passwort</returns>
-        public char[] Decrypt(char[] input)
+        public char[] Decrypt(char []input)
         {
             //Länge des Passworts
             int length = input.Length;
+            Array.Resize(ref input, length - 1);
             //Abschneiden des letzten Zeichens
-            input [length - 1] = '\0';
             return input;
+            
         }
 
         /// <summary>

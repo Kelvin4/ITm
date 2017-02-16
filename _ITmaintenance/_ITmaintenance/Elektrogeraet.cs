@@ -34,7 +34,7 @@ namespace _ITmaintenance
         /// <summary>
         /// Eingenschaften
         /// </summary>
-        /// public string GeraetTyp
+        public string GeraetTyp
         {
             get { return this.geraetTyp; }
         }

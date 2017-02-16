@@ -184,6 +184,7 @@
             this.bWeiterZum2.TabIndex = 16;
             this.bWeiterZum2.Text = "Weiter";
             this.bWeiterZum2.UseVisualStyleBackColor = true;
+            this.bWeiterZum2.Click += new System.EventHandler(this.bWeiterZum2_Click);
             // 
             // bBesitzerAngabenAbbrechen
             // 

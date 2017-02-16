@@ -77,7 +77,7 @@ namespace _ITmaintenance
         /// Initialisiert die Verbindung und führt das Querie aus
         /// </summary>
         /// <returns>kein Rückgabewert</returns>
-        public void initSQLAdapter()
+        private void initSQLAdapter()
         {
             //Zuweisung der Datenbank
             this.connection.ConnectionString = "Data Source=" + this.dataSource;
@@ -86,7 +86,7 @@ namespace _ITmaintenance
             //Zuweisung der Datenbank an das Command
             this.command = new SQLiteCommand(this.connection);
             //Querie - Text
-            this.command.CommandText = "SELECT Personalnummer,Passwort FROM Mitarbeiter WHERE Name = '" + this.name + "'";
+            this.command.CommandText = "SELECT Personalnummer, Passwort FROM Mitarbeiter WHERE Name = '" + this.name + "'";
             // Ausführung des Queries
             this.command.ExecuteNonQuery();
             this.reader = this.command.ExecuteReader();
@@ -95,9 +95,11 @@ namespace _ITmaintenance
             {
                 //Abfrage der Personalnummer
                 this.personalnummer     = reader.GetInt32(reader.GetOrdinal("Personalnummer"));
+                Console.WriteLine(this.personalnummer);
                 //Abfrage des Passworts
                 this.passwordDatabase   = reader.GetString(reader.GetOrdinal("Passwort")).ToCharArray();
             }
+            this.connection.Close();
         }
 
         /// <summary>
@@ -113,7 +115,7 @@ namespace _ITmaintenance
             char[] encryptPassword = coder.Decrypt(this.passwordDatabase);
 
             //Überprüfung der Werte
-            if( encryptPassword.Equals(this.password))
+            if( encryptPassword.SequenceEqual(this.password))
             {
                 //True
                 validUser = true;

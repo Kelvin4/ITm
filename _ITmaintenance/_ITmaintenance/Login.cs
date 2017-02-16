@@ -22,20 +22,33 @@ namespace _ITmaintenance
 
         private void bAnmelden_Click(object sender, EventArgs e)
         {
-
-            this.name = this.tBBenutzernameLogin.Text;
-            this.password = this.tBPasswortLogin.Text.ToCharArray();
-            this.adapter = new Login_SQL_Adapter(name, password);
+            if (this.lBenutzernameLogin.Text != "" && this.tBPasswortLogin.Text != "")
+            {
+                this.name = this.tBBenutzernameLogin.Text;
+                this.password = this.tBPasswortLogin.Text.ToCharArray();
+                this.adapter = new Login_SQL_Adapter(name, password);
+                if (this.adapter.CheckUser())
+                {
+                    MessageBox.Show("Willkommen im Programm. Ihre Personalnummer ist ID: " + this.adapter.getPersNr() + ".");
+                    this.Hide();
+                    Hauptmenu menue = new Hauptmenu();
+                    menue.ShowDialog(this);
+                }
+                else
+                {
+                    MessageBox.Show("Falscher Name oder falsches Passwort. Bitte versuchen Sie es erneut!");
+                }        
+            }
+            else
+            {
+                MessageBox.Show("Bitte geben Sie Ihren Namen und Ihr Passwort ein!");
+            }
         }
 
         private void bAbbrechenLogin_Click(object sender, EventArgs e)
         {
             this.Dispose();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
+            Environment.Exit(0);
         }
     }
 }
