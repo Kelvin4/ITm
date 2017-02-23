@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _ITmaintance
+namespace _ITmaintenance
 {
     public partial class ElektrogeraetBenutzeroberfläche : Form
     {

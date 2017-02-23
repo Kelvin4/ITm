@@ -20,6 +20,7 @@ namespace _ITmaintenance
             InitializeComponent();
         }
 
+
         private void bAnmelden_Click(object sender, EventArgs e)
         {
             if (this.lBenutzernameLogin.Text != "" && this.tBPasswortLogin.Text != "")
@@ -29,6 +30,8 @@ namespace _ITmaintenance
                 this.adapter = new Login_SQL_Adapter(name, password);
                 if (this.adapter.CheckUser())
                 {
+                    Benutzer benutzer = Benutzer.getInstance();
+                    benutzer.setData(this.name, password);
                     MessageBox.Show("Willkommen im Programm. Ihre Personalnummer ist ID: " + this.adapter.getPersNr() + ".");
                     this.Hide();
                     Hauptmenu menue = new Hauptmenu();
@@ -48,7 +51,13 @@ namespace _ITmaintenance
         private void bAbbrechenLogin_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            Environment.Exit(0);
+            Application.Exit();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }

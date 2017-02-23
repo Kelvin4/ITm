@@ -38,54 +38,57 @@
             // 
             // bNeuesGeraet
             // 
-            this.bNeuesGeraet.Location = new System.Drawing.Point(73, 51);
+            this.bNeuesGeraet.Location = new System.Drawing.Point(833, 246);
             this.bNeuesGeraet.Name = "bNeuesGeraet";
-            this.bNeuesGeraet.Size = new System.Drawing.Size(164, 23);
+            this.bNeuesGeraet.Size = new System.Drawing.Size(300, 100);
             this.bNeuesGeraet.TabIndex = 1;
             this.bNeuesGeraet.Text = "neues geraet";
             this.bNeuesGeraet.UseVisualStyleBackColor = true;
+            this.bNeuesGeraet.Click += new System.EventHandler(this.bNeuesGeraet_Click);
             // 
             // bDatenverwaltung
             // 
-            this.bDatenverwaltung.Location = new System.Drawing.Point(73, 80);
+            this.bDatenverwaltung.Location = new System.Drawing.Point(833, 366);
             this.bDatenverwaltung.Name = "bDatenverwaltung";
-            this.bDatenverwaltung.Size = new System.Drawing.Size(164, 23);
+            this.bDatenverwaltung.Size = new System.Drawing.Size(300, 100);
             this.bDatenverwaltung.TabIndex = 2;
             this.bDatenverwaltung.Text = "Datenverwaltung";
             this.bDatenverwaltung.UseVisualStyleBackColor = true;
             // 
             // bNeuerMitarbeiter
             // 
-            this.bNeuerMitarbeiter.Location = new System.Drawing.Point(73, 109);
+            this.bNeuerMitarbeiter.Location = new System.Drawing.Point(833, 496);
             this.bNeuerMitarbeiter.Name = "bNeuerMitarbeiter";
-            this.bNeuerMitarbeiter.Size = new System.Drawing.Size(164, 23);
+            this.bNeuerMitarbeiter.Size = new System.Drawing.Size(300, 100);
             this.bNeuerMitarbeiter.TabIndex = 3;
             this.bNeuerMitarbeiter.Text = "Neuer Mitarbeiter";
             this.bNeuerMitarbeiter.UseVisualStyleBackColor = true;
             // 
             // bMitarbeiterDatenAender
             // 
-            this.bMitarbeiterDatenAender.Location = new System.Drawing.Point(73, 138);
+            this.bMitarbeiterDatenAender.Location = new System.Drawing.Point(833, 628);
             this.bMitarbeiterDatenAender.Name = "bMitarbeiterDatenAender";
-            this.bMitarbeiterDatenAender.Size = new System.Drawing.Size(164, 23);
+            this.bMitarbeiterDatenAender.Size = new System.Drawing.Size(300, 100);
             this.bMitarbeiterDatenAender.TabIndex = 4;
             this.bMitarbeiterDatenAender.Text = "Mitarbeiter Daten aendern";
             this.bMitarbeiterDatenAender.UseVisualStyleBackColor = true;
+            this.bMitarbeiterDatenAender.Click += new System.EventHandler(this.bMitarbeiterDatenAender_Click);
             // 
             // lMenu
             // 
             this.lMenu.AutoSize = true;
-            this.lMenu.Location = new System.Drawing.Point(124, 9);
+            this.lMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMenu.Location = new System.Drawing.Point(883, 51);
             this.lMenu.Name = "lMenu";
-            this.lMenu.Size = new System.Drawing.Size(34, 13);
+            this.lMenu.Size = new System.Drawing.Size(288, 108);
             this.lMenu.TabIndex = 5;
             this.lMenu.Text = "Menu";
             // 
             // bHauptmenuSchliessen
             // 
-            this.bHauptmenuSchliessen.Location = new System.Drawing.Point(73, 167);
+            this.bHauptmenuSchliessen.Location = new System.Drawing.Point(1425, 784);
             this.bHauptmenuSchliessen.Name = "bHauptmenuSchliessen";
-            this.bHauptmenuSchliessen.Size = new System.Drawing.Size(164, 23);
+            this.bHauptmenuSchliessen.Size = new System.Drawing.Size(300, 100);
             this.bHauptmenuSchliessen.TabIndex = 6;
             this.bHauptmenuSchliessen.Text = "Schliessen";
             this.bHauptmenuSchliessen.UseVisualStyleBackColor = true;
@@ -95,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 265);
+            this.ClientSize = new System.Drawing.Size(1768, 917);
             this.Controls.Add(this.bHauptmenuSchliessen);
             this.Controls.Add(this.lMenu);
             this.Controls.Add(this.bMitarbeiterDatenAender);
@@ -104,7 +107,7 @@
             this.Controls.Add(this.bNeuesGeraet);
             this.Name = "Hauptmenu";
             this.Text = "Hauptmenu";
-            this.Load += new System.EventHandler(this.Hauptmenu_Load);
+            this.Load += new System.EventHandler(this.Hauptmenu_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

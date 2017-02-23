@@ -1,4 +1,4 @@
-﻿namespace _ITmaintance
+﻿namespace _ITmaintenance
 {
     partial class ElektrogeraetBenutzeroberfläche
     {

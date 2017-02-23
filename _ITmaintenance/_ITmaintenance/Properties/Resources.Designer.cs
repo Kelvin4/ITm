@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _ITmaintance.Properties
+namespace _ITmaintenance.Properties
 {
 
 

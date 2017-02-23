@@ -23,9 +23,14 @@ namespace _ITmaintenance
 
         private void bAenderungenAusführen_Click(object sender, EventArgs e)
         {
-            if(tBNeuesPasswort.Text != tBPasswortBestaetigen.Text)
+            Benutzer benutzer = Benutzer.getInstance();
+            if(tBNeuesPasswort.Text.Equals(tBPasswortBestaetigen.Text) && !(tBAltesPasswort.Equals(benutzer.Password)))
             {
-                MessageBox.Show("Die Passwörter stimmen nicht überein", "Warnung");
+                MessageBox.Show("Die Passwörter beziehungsweise ihr altes Passwort stimmen nicht überein", "Warnung");
+            }
+            else
+            {
+
             }
             
         }
@@ -37,7 +42,9 @@ namespace _ITmaintenance
         /// <param name="e"></param>
         private void bAenderungenAbbrechen_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Dispose(true);
+            Hauptmenu menu = new Hauptmenu();
+            menu.ShowDialog(this);
         }
     }
 }

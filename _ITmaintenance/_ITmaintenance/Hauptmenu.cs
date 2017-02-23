@@ -18,18 +18,32 @@ namespace _ITmaintenance
         public Hauptmenu()
         {
             InitializeComponent();
-            passwort =  "Kelvin".ToCharArray();
-            this.adapter = new Login_SQL_Adapter("Kelvin Sopnan", this.passwort);
-        }
-
-        private void Hauptmenu_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void bHauptmenuSchliessen_Click(object sender, EventArgs e)
         {
+            this.Dispose(true);
             Application.Exit();
+        }
+
+        private void bNeuesGeraet_Click(object sender, EventArgs e)
+        {
+            this.Dispose(true);
+            ElektrogeraetBenutzeroberfläche neuesGeraet = new _ITmaintenance.ElektrogeraetBenutzeroberfläche();
+            neuesGeraet.ShowDialog();
+        }
+
+        private void bMitarbeiterDatenAender_Click(object sender, EventArgs e)
+        {
+            this.Dispose(true);
+            LoginDatenAendern datenAendern = new _ITmaintenance.LoginDatenAendern();
+            datenAendern.ShowDialog(this);
+        }
+
+        private void Hauptmenu_Load_1(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }

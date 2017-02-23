@@ -38,6 +38,7 @@
             this.bAenderungenAusführen = new System.Windows.Forms.Button();
             this.bLoginDatenAenderungenAbbrechen = new System.Windows.Forms.Button();
             this.tBBenutzernameBeiPasswortAendern = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lBenutzernameBeiPasswortAendern
@@ -125,11 +126,22 @@
             this.tBBenutzernameBeiPasswortAendern.Size = new System.Drawing.Size(100, 20);
             this.tBBenutzernameBeiPasswortAendern.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(501, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(857, 108);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Logindaten ändern";
+            // 
             // LoginDatenAendern
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 265);
+            this.ClientSize = new System.Drawing.Size(1852, 879);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bLoginDatenAenderungenAbbrechen);
             this.Controls.Add(this.bAenderungenAusführen);
             this.Controls.Add(this.tBPasswortBestaetigen);
@@ -159,5 +171,6 @@
         private System.Windows.Forms.Button bAenderungenAusführen;
         private System.Windows.Forms.Button bLoginDatenAenderungenAbbrechen;
         private System.Windows.Forms.TextBox tBBenutzernameBeiPasswortAendern;
+        private System.Windows.Forms.Label label1;
     }
 }
