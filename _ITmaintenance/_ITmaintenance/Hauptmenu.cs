@@ -11,10 +11,6 @@ namespace _ITmaintenance
 {
     public partial class Hauptmenu : Form
     {
-
-        private Login_SQL_Adapter adapter;
-        private char[] passwort = new char[15];
-
         public Hauptmenu()
         {
             InitializeComponent();

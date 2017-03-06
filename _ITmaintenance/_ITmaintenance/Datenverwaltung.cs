@@ -33,17 +33,6 @@ namespace _ITmaintenance
 
         private void button7_Click(object sender, EventArgs e)
         {
-            test = !test;
-            if (test)
-            {
-                panel1.Show();
-                panel2.Hide();
-            }
-            else
-            {
-                panel2.Show();
-                panel1.Hide();
-            }
 
         }
     }

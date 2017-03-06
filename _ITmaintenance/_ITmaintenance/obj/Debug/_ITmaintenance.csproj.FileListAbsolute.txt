@@ -16,3 +16,15 @@ C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaint
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.LoginDatenAendern.resources
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.Properties.Resources.resources
 C:\Users\Kelvin\Oim\Projekt\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.csproj.GenerateResource.Cache
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.csprojResolveAssemblyReference.cache
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.BesitzerBenutzeroberfläche.resources
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.Hauptmenu.resources
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.Login.resources
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.LoginDatenAendern.resources
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintance.Properties.Resources.resources
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.csproj.GenerateResource.Cache
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintance.exe
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\_ITmaintance.pdb
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\bin\Debug\System.Data.SQLite.dll
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.ElektrogeraetBenutzeroberfläche.resources
+E:\Git\ITm\_ITmaintenance\_ITmaintenance\obj\Debug\_ITmaintenance.Datenverwaltung.resources
