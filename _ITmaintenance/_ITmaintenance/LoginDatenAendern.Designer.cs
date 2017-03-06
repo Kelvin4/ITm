@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lBenutzernameBeiPasswortAendern = new System.Windows.Forms.Label();
             this.lAltesPasswort = new System.Windows.Forms.Label();
             this.lNeuesPasswort = new System.Windows.Forms.Label();
             this.lPasswortBestaetigen = new System.Windows.Forms.Label();
@@ -37,73 +36,68 @@
             this.tBPasswortBestaetigen = new System.Windows.Forms.TextBox();
             this.bAenderungenAusführen = new System.Windows.Forms.Button();
             this.bLoginDatenAenderungenAbbrechen = new System.Windows.Forms.Button();
-            this.tBBenutzernameBeiPasswortAendern = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // lBenutzernameBeiPasswortAendern
-            // 
-            this.lBenutzernameBeiPasswortAendern.AutoSize = true;
-            this.lBenutzernameBeiPasswortAendern.Location = new System.Drawing.Point(33, 27);
-            this.lBenutzernameBeiPasswortAendern.Name = "lBenutzernameBeiPasswortAendern";
-            this.lBenutzernameBeiPasswortAendern.Size = new System.Drawing.Size(75, 13);
-            this.lBenutzernameBeiPasswortAendern.TabIndex = 0;
-            this.lBenutzernameBeiPasswortAendern.Text = "Benutzername";
-            this.lBenutzernameBeiPasswortAendern.Click += new System.EventHandler(this.lAktuellerBenutzernameAendern_Click);
             // 
             // lAltesPasswort
             // 
             this.lAltesPasswort.AutoSize = true;
-            this.lAltesPasswort.Location = new System.Drawing.Point(33, 76);
+            this.lAltesPasswort.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lAltesPasswort.Location = new System.Drawing.Point(482, 302);
             this.lAltesPasswort.Name = "lAltesPasswort";
-            this.lAltesPasswort.Size = new System.Drawing.Size(76, 13);
+            this.lAltesPasswort.Size = new System.Drawing.Size(341, 55);
             this.lAltesPasswort.TabIndex = 4;
             this.lAltesPasswort.Text = "Altes Passwort";
             // 
             // lNeuesPasswort
             // 
             this.lNeuesPasswort.AutoSize = true;
-            this.lNeuesPasswort.Location = new System.Drawing.Point(36, 121);
+            this.lNeuesPasswort.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNeuesPasswort.Location = new System.Drawing.Point(482, 411);
             this.lNeuesPasswort.Name = "lNeuesPasswort";
-            this.lNeuesPasswort.Size = new System.Drawing.Size(84, 13);
+            this.lNeuesPasswort.Size = new System.Drawing.Size(375, 55);
             this.lNeuesPasswort.TabIndex = 5;
             this.lNeuesPasswort.Text = "Neues Passwort";
             // 
             // lPasswortBestaetigen
             // 
             this.lPasswortBestaetigen.AutoSize = true;
-            this.lPasswortBestaetigen.Location = new System.Drawing.Point(33, 166);
+            this.lPasswortBestaetigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lPasswortBestaetigen.Location = new System.Drawing.Point(380, 511);
             this.lPasswortBestaetigen.Name = "lPasswortBestaetigen";
-            this.lPasswortBestaetigen.Size = new System.Drawing.Size(103, 13);
+            this.lPasswortBestaetigen.Size = new System.Drawing.Size(610, 55);
             this.lPasswortBestaetigen.TabIndex = 6;
-            this.lPasswortBestaetigen.Text = "Passwort Bestätigen";
+            this.lPasswortBestaetigen.Text = "Neues Passwort bestätigen";
             // 
             // tBAltesPasswort
             // 
-            this.tBAltesPasswort.Location = new System.Drawing.Point(172, 69);
+            this.tBAltesPasswort.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBAltesPasswort.Location = new System.Drawing.Point(1087, 299);
             this.tBAltesPasswort.Name = "tBAltesPasswort";
-            this.tBAltesPasswort.Size = new System.Drawing.Size(100, 20);
+            this.tBAltesPasswort.Size = new System.Drawing.Size(581, 62);
             this.tBAltesPasswort.TabIndex = 7;
             // 
             // tBNeuesPasswort
             // 
-            this.tBNeuesPasswort.Location = new System.Drawing.Point(172, 114);
+            this.tBNeuesPasswort.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBNeuesPasswort.Location = new System.Drawing.Point(1087, 408);
             this.tBNeuesPasswort.Name = "tBNeuesPasswort";
-            this.tBNeuesPasswort.Size = new System.Drawing.Size(100, 20);
+            this.tBNeuesPasswort.Size = new System.Drawing.Size(581, 62);
             this.tBNeuesPasswort.TabIndex = 8;
             // 
             // tBPasswortBestaetigen
             // 
-            this.tBPasswortBestaetigen.Location = new System.Drawing.Point(172, 159);
+            this.tBPasswortBestaetigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBPasswortBestaetigen.Location = new System.Drawing.Point(1087, 508);
             this.tBPasswortBestaetigen.Name = "tBPasswortBestaetigen";
-            this.tBPasswortBestaetigen.Size = new System.Drawing.Size(100, 20);
+            this.tBPasswortBestaetigen.Size = new System.Drawing.Size(581, 62);
             this.tBPasswortBestaetigen.TabIndex = 9;
             // 
             // bAenderungenAusführen
             // 
-            this.bAenderungenAusführen.Location = new System.Drawing.Point(91, 198);
+            this.bAenderungenAusführen.Location = new System.Drawing.Point(1332, 777);
             this.bAenderungenAusführen.Name = "bAenderungenAusführen";
-            this.bAenderungenAusführen.Size = new System.Drawing.Size(149, 23);
+            this.bAenderungenAusführen.Size = new System.Drawing.Size(220, 81);
             this.bAenderungenAusführen.TabIndex = 10;
             this.bAenderungenAusführen.Text = "Änderungen ausführen";
             this.bAenderungenAusführen.UseVisualStyleBackColor = true;
@@ -111,26 +105,19 @@
             // 
             // bLoginDatenAenderungenAbbrechen
             // 
-            this.bLoginDatenAenderungenAbbrechen.Location = new System.Drawing.Point(120, 240);
+            this.bLoginDatenAenderungenAbbrechen.Location = new System.Drawing.Point(1624, 777);
             this.bLoginDatenAenderungenAbbrechen.Name = "bLoginDatenAenderungenAbbrechen";
-            this.bLoginDatenAenderungenAbbrechen.Size = new System.Drawing.Size(75, 23);
+            this.bLoginDatenAenderungenAbbrechen.Size = new System.Drawing.Size(202, 81);
             this.bLoginDatenAenderungenAbbrechen.TabIndex = 11;
-            this.bLoginDatenAenderungenAbbrechen.Text = "Abbrechen";
+            this.bLoginDatenAenderungenAbbrechen.Text = "Zurück zum Hauptmenü";
             this.bLoginDatenAenderungenAbbrechen.UseVisualStyleBackColor = true;
             this.bLoginDatenAenderungenAbbrechen.Click += new System.EventHandler(this.bAenderungenAbbrechen_Click);
-            // 
-            // tBBenutzernameBeiPasswortAendern
-            // 
-            this.tBBenutzernameBeiPasswortAendern.Location = new System.Drawing.Point(172, 20);
-            this.tBBenutzernameBeiPasswortAendern.Name = "tBBenutzernameBeiPasswortAendern";
-            this.tBBenutzernameBeiPasswortAendern.Size = new System.Drawing.Size(100, 20);
-            this.tBBenutzernameBeiPasswortAendern.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(501, 71);
+            this.label1.Location = new System.Drawing.Point(503, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(857, 108);
             this.label1.TabIndex = 12;
@@ -150,8 +137,6 @@
             this.Controls.Add(this.lPasswortBestaetigen);
             this.Controls.Add(this.lNeuesPasswort);
             this.Controls.Add(this.lAltesPasswort);
-            this.Controls.Add(this.tBBenutzernameBeiPasswortAendern);
-            this.Controls.Add(this.lBenutzernameBeiPasswortAendern);
             this.Name = "LoginDatenAendern";
             this.Text = "LoginDatenAendern";
             this.ResumeLayout(false);
@@ -160,8 +145,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lBenutzernameBeiPasswortAendern;
         private System.Windows.Forms.Label lAltesPasswort;
         private System.Windows.Forms.Label lNeuesPasswort;
         private System.Windows.Forms.Label lPasswortBestaetigen;
@@ -170,7 +153,6 @@
         private System.Windows.Forms.TextBox tBPasswortBestaetigen;
         private System.Windows.Forms.Button bAenderungenAusführen;
         private System.Windows.Forms.Button bLoginDatenAenderungenAbbrechen;
-        private System.Windows.Forms.TextBox tBBenutzernameBeiPasswortAendern;
         private System.Windows.Forms.Label label1;
     }
 }

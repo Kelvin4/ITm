@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace _ITmaintance
+namespace _ITmaintenance
 {
     class Aendern_SQL_Adapter
     {
@@ -15,25 +15,17 @@ namespace _ITmaintance
         /// </summary>
         private string dataSource;
 
-        /// <summary>
-        /// Name aus der Textbox
-        /// </summary>
         private string name;
 
         /// <summary>
         /// eingegebenes Passwort
         /// </summary>
-        private char[] password;
+        private char[] passwordOld;
 
         /// <summary>
-        /// Passwort aus der Datenbank
+        /// eingegebenes Passwort
         /// </summary>
-        private char[] passwordDatabase;
-
-        /// <summary>
-        /// Personalnummer des Mitarbeiters
-        /// </summary>
-        private int personalnummer;
+        private char[] passwordNew;
 
         /// <summary>
         /// SQL - Verbindung
@@ -56,14 +48,13 @@ namespace _ITmaintance
         /// </summary>
         /// <param name="name">Eingabe des zu überprüfendes Namens</param>
         /// <param name="password">Eingabe des zu überprüfendes Passworts</param>
-        public Aendern_SQL_Adapter(string name, char[] password)
+        public Aendern_SQL_Adapter(string name, char[] passwordOld, char[] passwordNew)
         {
             //dynamische und statische Zuweisung
-            this.name = name;
-            this.password = password;
-            this.passwordDatabase = "".ToCharArray();
-            this.personalnummer = 0;
             this.dataSource = "Mitarbeiter.sqlite";
+            this.name = name;
+            this.passwordOld = passwordOld;
+            this.passwordNew = passwordNew;
             this.connection = new SQLiteConnection();
             //Initialisierung des Adapters
             this.initSQLAdapter();
@@ -82,7 +73,7 @@ namespace _ITmaintance
             //Zuweisung der Datenbank an das Command
             this.command = new SQLiteCommand(this.connection);
             //Querie - Text
-            this.command.CommandText = "Update Passwort FROM Mitarbeiter WHERE Name = '" + this.name + "' AND ";
+            this.command.CommandText = "Update Mitarbeiter SET Passwort = '" + this.passwordNew + "' WHERE Name = '" + this.name + "' AND Passwort = '" + this.passwordOld + "'";
             // Ausführung des Queries
             this.command.ExecuteNonQuery();
             this.reader = this.command.ExecuteReader();

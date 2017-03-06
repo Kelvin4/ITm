@@ -11,8 +11,8 @@ namespace _ITmaintenance
         /// Unterstützungsfelder
         /// </summary>
         private Besitzer besitzer;
-        private string geraetTyp, geraetName, productID;
-        private Enum Status;
+        private string id, geraetTyp, geraetName, productID;
+        private Enum status;
 
         /// <summary>
         /// Konstruktor
@@ -22,18 +22,23 @@ namespace _ITmaintenance
         /// <param name="geraetName"></param>
         /// <param name="productID"></param>
         /// <param name="Status"></param>
-        public Elektrogeraet(string geraetTyp, Besitzer besitzer, string geraetName, string productID, Enum Status)
+        public Elektrogeraet(string id, string geraetTyp, Besitzer besitzer, string geraetName, string productID, Enum status)
         {
+            this.id = id;
             this.geraetTyp = geraetTyp;
             this.besitzer = besitzer;
             this.geraetName = geraetName;
             this.productID = productID;
-            this.Status = Status;
+            this.status = status;
         }
 
         /// <summary>
         /// Eingenschaften
         /// </summary>
+        public string ID
+        {
+            get { return this.id; }
+        }
         public string GeraetTyp
         {
             get { return this.geraetTyp; }
@@ -56,7 +61,15 @@ namespace _ITmaintenance
 
         public Enum STATUS
         {
-            get { return this.Status; }
+            get { return this.status; }
+        }
+
+        public string output()
+        {
+            string output = "ID: " + this.id + "\n" +
+                    "Gerätename: " + this.geraetName;
+            return output;
+
         }
     }
 }

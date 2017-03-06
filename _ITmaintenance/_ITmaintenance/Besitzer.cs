@@ -12,7 +12,7 @@ namespace _ITmaintenance
         /// </summary>
         private string name, vorname, postleitzahl, ort, handynummer;
         private char strasse, email;
-        private int hausnummer;
+        private int idBesitzer, hausnummer;
 
         /// <summary>
         /// Konstruktor
@@ -25,8 +25,9 @@ namespace _ITmaintenance
         /// <param name="strasse"></param>
         /// <param name="email"></param>
         /// <param name="hausnummer"></param>
-        public Besitzer(string name, string vorname, string postleitzahl, string ort, string handynummer, char strasse, char email, int hausnummer)
+        public Besitzer(int idBesitzer, string name, string vorname, string postleitzahl, string ort, string handynummer, char strasse, char email, int hausnummer)
         {
+            this.idBesitzer = idBesitzer;
             this.name = name;
             this.vorname = vorname;
             this.postleitzahl = postleitzahl;
@@ -41,6 +42,11 @@ namespace _ITmaintenance
         /// <summary>
         /// Eingenschaften
         /// </summary>
+        public int IdBesitzer
+        {
+            get { return this.idBesitzer; }
+        }
+
         public string Name
         {
             get{return this.name;}

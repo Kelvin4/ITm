@@ -54,6 +54,7 @@
             this.bDatenverwaltung.TabIndex = 2;
             this.bDatenverwaltung.Text = "Datenverwaltung";
             this.bDatenverwaltung.UseVisualStyleBackColor = true;
+            this.bDatenverwaltung.Click += new System.EventHandler(this.bDatenverwaltung_Click);
             // 
             // bNeuerMitarbeiter
             // 

@@ -6,33 +6,37 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace _ITmaintenance
 {
     public partial class LoginDatenAendern : Form
     {
+
+        private Benutzer benutzer;
+        /// <summary>
+        /// SQL - Verbindung
+        /// </summary>
+        private SQLiteConnection connection;
+        private string dataSource;
+
+        /// <summary>
+        /// SQL - Commando
+        /// </summary>
+        private SQLiteCommand command;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private SQLiteDataReader reader;
+
+        private Aendern_SQL_Adapter adapter;
         public LoginDatenAendern()
         {
             InitializeComponent();
-        }
-
-        private void lAktuellerBenutzernameAendern_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bAenderungenAusführen_Click(object sender, EventArgs e)
-        {
-            Benutzer benutzer = Benutzer.getInstance();
-            if(tBNeuesPasswort.Text.Equals(tBPasswortBestaetigen.Text) && !(tBAltesPasswort.Equals(benutzer.Password)))
-            {
-                MessageBox.Show("Die Passwörter beziehungsweise ihr altes Passwort stimmen nicht überein", "Warnung");
-            }
-            else
-            {
-
-            }
-            
+            this.benutzer = Benutzer.getInstance();
+            this.dataSource = "Mitarbeiter.sqlite";
+            this.connection = new SQLiteConnection();
         }
 
         /// <summary>
@@ -45,6 +49,14 @@ namespace _ITmaintenance
             this.Dispose(true);
             Hauptmenu menu = new Hauptmenu();
             menu.ShowDialog(this);
+        }
+
+        private void bAenderungenAusführen_Click(object sender, EventArgs e)
+        {
+            if(this.tBAltesPasswort.Text.Equals(benutzer.Password) && this.tBNeuesPasswort.Text.Equals(this.tBPasswortBestaetigen.Text))
+            {
+                this.adapter = new Aendern_SQL_Adapter(benutzer.Name, benutzer.Password, tBNeuesPasswort.Text.ToCharArray());
+            }
         }
     }
 }

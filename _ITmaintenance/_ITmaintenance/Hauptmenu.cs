@@ -45,5 +45,12 @@ namespace _ITmaintenance
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
         }
+
+        private void bDatenverwaltung_Click(object sender, EventArgs e)
+        {
+            Datenverwaltung verwaltung = new Datenverwaltung();
+            verwaltung.ShowDialog(this);
+            this.Dispose();
+        }
     }
 }
